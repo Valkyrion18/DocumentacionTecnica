@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación Técnica</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   
+    <nav id="navbar">
+        <header id="encabezado_nav_bar">
+            <div>
+                <img src="https://brandlogos.net/wp-content/uploads/2020/12/python-logo-512x512.png" alt="" height="200">
+            </div>  
+            Condicionales y Ciclos en Python
+        </header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introducción">Introducción</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Conocimientos_previos">Conocimientos previos</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Condicional_if">Condicional if</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Condicional_if_else">Condicional if else</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Condicional_anidado">Condicional anidado</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Ciclo_while">Ciclo while</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Ciclo_for">Ciclo for</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Referencia">Referencia</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Introducción">
+            <header>Introducción</header>
+            <article>
+                <p>
+                    Las estructuras de datos en Python se pueden entender como un tipo de dato compuesto, debido a que en una misma variable podemos almacenar una estructura completa con información. Dichas estructuras, pueden tener diferentes características y funcionalidades. De hecho, existen múltiples tipos de estructuras de datos en Python
+                </p>
+
+                <p>
+                    Las estructuras de datos más comunes en Python son las listas, las tablas y los diccionarios. Aunque tienen otro nombre, en otros lenguajes, son los arreglos o vectores, las matrices y los arreglos indexados, respectivamente. Son en esencia lo mismo, aunque como es habitual en Python, con varias facilidades y funcionalidades ya incluidas.                    
+                </p>
+
+                <p>
+                    Las estructuras de datos han sido creadas para solucionar una gran variedad de problemáticas que no podrían ser resueltas con lo que conocemos hasta ahora, pues permiten agrupar fácilmente un conjunto de datos (normalmente relacionados) para operar fácilmente con ellos. Cosas como ordenar, agregar, eliminar, mostrar, recorrer, entre otras operaciones, son posibles y fáciles en Python.
+                </p>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="Conocimientos_previos">
+            <header>Conocimientos previos</header>
+            <article>
+                <p>Hay algunos conceptos que se deben tener en cuenta para dar inicio a esta guía:</p>
+
+                <ul>
+                    <li>
+                        Declaración e invocación de variables en Python.
+                    </li>
+                    <li>
+                        Conocimiento y uso de las operaciones matemáticas en Python.
+                    </li>
+                    <li>
+                        No se requiere experiencia. En todo caso, cualquier conocimiento o contacto previo con la programación hará esta guía mas fácil de entender. 
+                    </li>
+                    <li>
+                        En este apartado no se van a considerar las estructuras de de datos.
+                    </li>
+                    <li>
+                        Los ejemplos no se incluyen en esta guía básica. Al final de la página se deja el enlace del sitio web de referencia para que se puedan buscar los ejercicios.
+                    </li>
+                
+                </ul>
+            </article>
+        </section>
+        
+        <section class="main-section" id="Condicional_if">
+            <header>Condicional <b>if</b></header>
+            <article>
+                <p>
+                    Los condicionales if en Python, son una estructura de control condicional, también llamadas estructuras selectivas de casos simples (porque solo definen un posible flujo), las cuales nos permiten tomar cierta decisión al interior de nuestro programa, es decir, nos permiten determinar qué acciones ejecutar según cierta.
+                </p>
+
+                <p>
+                    Básicamente, un condicional if en Python, es una estructura que nos posibilita definir las acciones a ejecutar si se cumple cierta condición y de ese modo modificar la ejecución de tareas en un programa según lo necesites.
+                </p>
+
+                La sintaxis de un condicional if, es bastante simple e incluso intuitiva:
+                <code>if (condición a evaluar):</code>
+                
+            </article>
+        </section>
+
+        <section class="main-section" id="Condicional_if_else">
+            <header>Condicional <b>if else</b></header>
+            <p>
+                Los condicionales if else, son una estructura de control que nos permite tomar cierta decisión al interior de nuestro programa. Es decir, nos permite determinar qué acciones tomar dada o no cierta condición. Es importante notar la parte del NO, pues ya no solo definimos qué hacer en caso de que se cumpla, sino (else) también qué hacer si no se cumple cierta condición.
+            </p>
+
+            <p>
+                En resumen, un condicional if else es una estructura que nos posibilita definir las acciones que se deben llevar a cabo si se cumple cierta condición y también indicar las acciones que se deben ejecutar en caso de que no se cumpla; generando así una separación o bifurcación en la ejecución del programa.
+            </p>
+
+            La sintaxis de un condicional if else, es en principio similar a la del condicional if, pero adicionando una nueva "estructura" que sería el else, el cual indica la acción o conjunto de acciones a llevar a cabo si no se cumplió la condición inicial (la del if):
+            <code>if (condición a evaluar):  
+                # Bloque de instrucciones si se cumple la condición....
+                # Solo se ejecutará si la condición es verdadera
+            else:
+                # Bloque de instrucciones si NO se cumple la condición....
+                # Solo se ejecutará si la es falsa</code>
+        </section>
+
+
+        <section class="main-section" id="Condicional_anidado">
+            <header>Condicional anidado</header>
+            <article>
+                <p>
+                    Los condicionales, permiten escribir código en su interior y en realidad, nada de impide incluso al interior de un condicional, poner otros (u otros). A eso se le llama condiciones anidados, pues una estructura condicional dentro de otra. De hecho, puedes anidar cuantos condicionales requieras, aunque no se recomienda más de dos o tres niveles.
+                </p>
+
+                <p>
+                    Dentro de un condicional, puedes poner cualquier instrucción válida y eso incluye a cualquier tipo de condicional que necesites y el funcionamiento, sigue siendo el mismo. De hecho, Python tiene una instrucción llamada elif() que permite simplificar un if() que se encuentra al interior de un else en Python.
+                </p>
+
+                En este ejemplo, vamos a anidar un if al interior de otro y luego un if al interior de un else. De ese modo, cubrimos varios casos:
+                <code>password = input("Ingrese la contraseña: ")
+
+                    if (len(password) >= 8):
+                        print('La contraseña es suficientemente larga.')
+                    
+                        if(password == 'miClaveSegura'):
+                            print("Además es la contraseña correcta.")
+                        else:
+                            print("Pero es incorrecta.")
+                    else:
+                        print('Tu contraseña es muy corta e insegura.')
+                    
+                        if (password != 'miClaveSegura'):
+                            print("Además, es incorrecta (por supuesto).")</code>
+                
+            </article>
+        </section>
+
+        <section class="main-section" id="Ciclo_while">
+            <header>Ciclo <b>while</b></header>
+            <article>
+                <p>
+                    Los ciclos while son una estructura cíclica, que nos permite ejecutar una o varias líneas de código de manera repetitiva sin necesidad de tener un valor inicial e incluso a veces sin siquiera conocer cuando se va a dar el valor final que esperamos.
+                </p>
+
+                <p>
+                    Con el ciclo while, no conoces el cuándo sino el cómo. Es decir, conocer la condición bajo la cual se va a detener el ciclo, pero no sabes cuántas iteraciones tomará eso, ni cuánto tiempo. Por ello se los llama ciclos indeterminados.
+                </p>
+
+                La sintaxis de un ciclo while es incluso más simple y "legible" que la de otros ciclos, pues simplemente requerimos tener clara una condición de parada:
+                <code>while(condición de finalización): 
+                    ...
+                    ...
+                    Bloque de Instrucciones...
+                    Dentro del while
+                    ...
+                    ...
+                
+                Bloque de Instrucciones...
+                FUERA del while</code>
+                
+            </article>
+        </section>
+
+        <section class="main-section" id="Ciclo_for">
+            <header>Ciclo <b>for</b></header>
+            <article>
+                <p>
+                    Los ciclos for (o ciclos para) son una estructura de control cíclica. Nos permiten ejecutar una o varias líneas de código de forma iterativa (o repetitiva), pero teniendo cierto control y conocimiento sobre las iteraciones. En el ciclo for en Python, es necesario tener un valor inicial y un valor final, y opcionalmente podemos hacer uso del tamaño del "paso" entre cada "giro" o iteración del ciclo.
+                </p>
+
+                <p>
+                    En resumen, un ciclo for en Python es una estructura iterativa para ejecutar un mismo segmento de código una cantidad de veces deseada y conocida. Pues necesitamos conoces previamente un valor de inicio, un tamaño de paso y un valor final para el ciclo.
+                </p>
+
+                La sintaxis de un ciclo for es simple en Python. En realidad, en la mayoría de los lenguajes de alto nivel es incluso muy similar, de hecho, con tan solo tener bien claros los 3 componentes del ciclo for (inicio, final y tamaño de paso) tenemos prácticamente todo hecho:
+                <code>for variable_contadora in range(valor_inicial, valor_final, tamaño_paso:
+                    ...
+                    ...
+                    Bloque de Instrucciones...
+                    ...
+                    ...
+                
+                Bloque fuera del ciclo...</code>
+                
+            </article>
+        </section>
+
+        <section class="main-section" id="Referencia">
+            <header>Referencia</header>
+            <article>
+                <ul>
+                    <li>
+                        Esta documentación fue tomada de la siguiente página.
+                        <a href="https://www.programarya.com/Cursos/Python/Ciclos/Ciclo-for" target="_blank">Visitar página</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>
